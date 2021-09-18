@@ -1,8 +1,12 @@
 const text = document.querySelectorAll('h1, h2, h3, h4, h5, p, li, td, caption, span, a')
 
+acount = 0;
 for(let i = 0; i < text.length; i++)
 {
-    if(text[i].innerHTML.includes('a')){
-        text[i].innerHTML = text[i].innerHTML.replace('a', 'TEST')
+    //causes severe usability issues if the html replace happens too often, but i dont think we need to worry about that too much for now. Just don't use a high frequency term like 'a'
+    if(text[i].innerHTML.includes('COVID')){
+        console.log(text[i].innerHTML)
+        text[i].innerHTML = text[i].innerHTML.replace(/COVID/g, 'MEV1')
+        acount++;
     }
 }

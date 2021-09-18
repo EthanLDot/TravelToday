@@ -1,9 +1,18 @@
+var myData;
+
+fetch('countryName.json')
+  .then(response => response.json())
+  .then(data => {
+      myData = data;
+      console.log(myData);}
+  )
+  .catch(error => console.log(error));
+
 chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
-    chrome.tabs.sendMessage(tabs[0].id, {type: "getCount"}, function(count) {
+    chrome.tabs.sendMessage(tabs[0].id, {type: "getCount", myQuery: myData}, function(count) {
         document.getElementById("myText").innerHTML = count;
     });
 });
-
 
 document.addEventListener('DOMContentLoaded', function(){
     var changeFontButton = document.getElementById('changeFont');

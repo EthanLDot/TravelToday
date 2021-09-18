@@ -1,6 +1,6 @@
 {
     "manifest_version": 2,
-    "name": "TravelToday",
+    "name": "TravelToday2",
     "version": "1.0",
 
     "background": {
@@ -12,7 +12,7 @@
         "matches": [
             "<all_urls>"
         ],
-        "all_frames": true,
+        "all-frames": true,
         "js": ["content_script.js"],
         "run_at": "document_end"
     }],

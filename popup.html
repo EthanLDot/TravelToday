@@ -8,20 +8,7 @@
     </head>
     <body>
         <h1>TravelToday</h1>
-        <p>Chrome Extension
-            1. Simple text manipulation/modification.
-            2. We should attempt to analyze the webpage text in the body and try to extract any country names that are found
-            3. The extension interface should either show when we click on the country name (if possible) or if we click on the extension itself on chrome.
-            4. The interface should show either the individual country found or a list of countries and their travel restriction status (Closed, open with restrictions, open)
-            5. The information to make that judgement will come from https://www.kayak.com/travel-restrictions
-            
-            Issues: accessing the information in the kayak is the only thing I dont have a clear solution for.
-            1. Airtable, which means creating a dataset for 190+ countries which is kinda dumb and not flexible
-            2. Somehow accessing the html of the kayak site and specifically looking for the html element that says "Open", "Closed", "Open with restrictions"
-            2 is probably the better choice but harder
-            
-            
-            Kayak site, it's really good:https://www.kayak.com/travel-restrictions</p>
+        <p id = "myText">Chrome Extension</p>
         <button type="button" name="button" id="changeFont">Randomize Font</button>
     </body>
 </html>

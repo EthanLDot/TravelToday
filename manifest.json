@@ -6,7 +6,9 @@
         "matches": [
             "<all_urls>"
         ],
-        "js": ["popup.js"]
+        "all-frames": true,
+        "js": ["popup.js", "content_script.js"],
+        "run_at": "document_end"
     }],
     "browser_action": {
         "default_icon": {

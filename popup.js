@@ -13,6 +13,7 @@ document.addEventListener('DOMContentLoaded', function(){
             chrome.tabs.executeScript(activeTab.id, {
                 file: 'inject.js'
             });
+            chrome.runtime.sendMessage({"message": "open_new_tab", "url": "https://www.kayak.com/travel-restrictions"});
         });
     }, false);
 }, false);

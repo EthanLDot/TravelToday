@@ -30,9 +30,9 @@
         "128": "images/pen128.png"
     },
     "permissions": [
-        "activeTab", "tabs"
+        "activeTab", "tabs", "contextMenus"
     ],
     "web_accessible_resources": [
-        "countryName.json"
+        "countryName.json", "countryName2.json"
     ]
 }

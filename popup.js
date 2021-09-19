@@ -28,7 +28,9 @@ fetch('countryName.json')
                     {
     
                         var response = xhr.responseXML.querySelectorAll("span.x5cZ");
-                        console.log(response[0].textContent);
+                        nation = nation + ' - ' + response[0].textContent.toUpperCase();
+                        anchor.appendChild(document.createTextNode(nation));
+                        myList.appendChild(node); 
                     }
                 }
     
@@ -37,8 +39,6 @@ fetch('countryName.json')
                 }
     
                 xhr.send();
-                anchor.appendChild(document.createTextNode(nation));
-                myList.appendChild(node); 
             })
         });
     });

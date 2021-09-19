@@ -1,5 +1,4 @@
 var myData;
-
 fetch('countryName.json')
   .then(response => response.json())
   .then(data => {
@@ -16,8 +15,28 @@ fetch('countryName.json')
                 var node = document.createElement('li');
                 var anchor = document.createElement("a");
                 nation = nation.replace(/[^a-zA-Z ]/g,"")
-                anchor.href = "https://www.kayak.com/travel-restrictions/" + (nation.toLowerCase()).replace(/ /g, "-");
+                var myUrl = "https://www.kayak.com/travel-restrictions/" + (nation.toLowerCase()).replace(/ /g, "-");
+                anchor.href = myUrl;
                 node.appendChild(anchor);
+                //chrome.runtime.sendMessage({"message": "scrape_kayak", "keyword": nation});
+                
+                var xhr = new XMLHttpRequest();
+                xhr.open("GET", myUrl, true);
+                xhr.responseType = "document";
+                xhr.onload = function() {
+                    if(xhr.readyState == 4 && xhr.status == 200)
+                    {
+    
+                        var response = xhr.responseXML.querySelectorAll("span.x5cZ");
+                        console.log(response[0].textContent);
+                    }
+                }
+    
+                xhr.onerror = function() {
+                    console.error(xhr.status, xhr.statusText);
+                }
+    
+                xhr.send();
                 anchor.appendChild(document.createTextNode(nation));
                 myList.appendChild(node); 
             })

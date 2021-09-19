@@ -1,7 +1,6 @@
 
 const text = document.querySelectorAll('h1, h2, h3, h4, h5, p, li, td, caption, span, a')
 
-
 function textCheck(myQuery)
 {
     count = 0;
@@ -36,3 +35,4 @@ chrome.runtime.onMessage.addListener(
         }
     }
 );
+

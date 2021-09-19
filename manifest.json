@@ -18,16 +18,16 @@
     }],
     "browser_action": {
         "default_icon": {
-            "16": "images/pen16.png",
-            "48": "images/pen48.png",
-            "128": "images/pen128.png"
+            "16": "images/plane.png",
+            "48": "images/plane.png",
+            "128": "images/plane.png"
         },
         "default_popup": "popup.html"
     },
     "icons": {
-        "16": "images/pen16.png",
-        "48": "images/pen48.png",
-        "128": "images/pen128.png"
+        "16": "images/plane.png",
+        "48": "images/plane.png",
+        "128": "images/plane.png"
     },
     "permissions": [
         "activeTab", "tabs", "contextMenus"

@@ -5,10 +5,18 @@ fetch('countryName.json')
   .then(data => {
       myData = data;
       //console.log(myData);
-      chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
-        chrome.tabs.sendMessage(tabs[0].id, {type: "getCount", myQuery: myData}, function(count) {
+      chrome.tabs.query({active: true, currentWindow: true}, function(tabs) 
+      {
+        chrome.tabs.sendMessage(tabs[0].id, {type: "getCount", myQuery: myData}, function(count) 
+        {
             var count = count.split(",")
-            document.getElementById("myText").innerHTML = count[0];
+            var myList = document.getElementById("nationsList");
+            count.forEach(function(nation)
+            {
+                var node = document.createElement('li');
+                node.appendChild(document.createTextNode(nation.replace(/[^a-zA-Z]/g,"")));
+                myList.appendChild(node); 
+            })
         });
     });
     }

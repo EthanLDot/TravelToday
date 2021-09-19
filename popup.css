@@ -35,3 +35,24 @@ h1 {
     font-weight: bold;
     text-align: center;
 }
+
+a:link{
+    font-size: 15px;
+    color: white;
+}
+
+a:visited{
+    color: white;
+}
+
+a:hover{
+    color: red;
+}
+
+a:active{
+    color: red;
+}
+
+ul {
+    list-style-type: none;
+}

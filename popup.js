@@ -14,7 +14,11 @@ fetch('countryName.json')
             count.forEach(function(nation)
             {
                 var node = document.createElement('li');
-                node.appendChild(document.createTextNode(nation.replace(/[^a-zA-Z]/g,"")));
+                var anchor = document.createElement("a");
+                nation = nation.replace(/[^a-zA-Z ]/g,"")
+                anchor.href = "https://www.kayak.com/travel-restrictions/" + (nation.toLowerCase()).replace(/ /g, "-");
+                node.appendChild(anchor);
+                anchor.appendChild(document.createTextNode(nation));
                 myList.appendChild(node); 
             })
         });

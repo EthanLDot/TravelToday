@@ -8,7 +8,7 @@ This is the Chrome extension that able the user check the country found or a lis
 ## User manual/guideline for using TravelToday
 (Before starting, you should install TravelToday from the folder in Google Chrome)
 #### Display the travel restriction status of country found on current page
-1) Select TravelToday at your top-right corner
+1) Select TravelToday at your top-right corner <br>
 ![image](https://user-images.githubusercontent.com/80609325/133921738-23fc5613-ecdb-41f1-85a1-cf5bc7eca3f6.png)
 2) Then it will display the result
 

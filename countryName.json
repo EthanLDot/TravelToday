@@ -379,14 +379,14 @@
   },
   {
     "Flag": "https://www.currencyremitapp.com/wp-content/themes/currencyremitapp/images/countryimages/northkorea.png",
-    "CountryName": "Korea (North)",
+    "CountryName": "North Korea",
     "Currency": "Won",
     "Code": "KPW",
     "Symbol": "₩"
   },
   {
     "Flag": "https://www.currencyremitapp.com/wp-content/themes/currencyremitapp/images/countryimages/southkorea.png",
-    "CountryName": "Korea (South)",
+    "CountryName": "South Korea",
     "Currency": "Won",
     "Code": "KRW",
     "Symbol": "₩"
@@ -764,7 +764,7 @@
   },
   {
     "Flag": "https://www.currencyremitapp.com/wp-content/themes/currencyremitapp/images/countryimages/vietnam.png",
-    "CountryName": "Viet Nam",
+    "CountryName": "Vietnam",
     "Currency": "Dong",
     "Code": "VND",
     "Symbol": "₫"

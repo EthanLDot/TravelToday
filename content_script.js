@@ -22,7 +22,13 @@ chrome.runtime.onMessage.addListener(
         switch(message.type) {
             case "getCount":
                 worldData = [];
-                message.myQuery.forEach(countryData => worldData.push(countryData.CountryName + ":" + textCheck(countryData.CountryName)));
+                message.myQuery.forEach(function(countryData) {
+                    var result = textCheck(countryData.CountryName);
+                    if(result > 0)
+                    {
+                        worldData.push(countryData.CountryName);   
+                    }
+                });
                 sendResponse(JSON.stringify(worldData));
                 break;
             default:

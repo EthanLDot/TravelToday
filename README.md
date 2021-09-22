@@ -18,5 +18,5 @@ This is a Chrome extension that allows the user check a list of countries and th
 ![image](https://user-images.githubusercontent.com/80609325/133921648-fedf4c82-376d-4844-93c6-870666ae7a1b.png)
 
 <a href = https://devpost.com/software/traveltoday> Devpost </a><br></br>
-Created by Tan Yi Cheng (Universiti Utara Malaysia), Ethan Lee (University of California, San Diego) and Sadashiva Yalla (Stony Brook University)
+Created by Tan Yi Cheng (Universiti Utara Malaysia), Ethan Lee (University of California, San Diego) and Sadashiva Yalla (Stony Brook University)<br></br>
 Special thanks to Caleb Solano for his mentorship
